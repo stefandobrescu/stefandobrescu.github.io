@@ -1,0 +1,29 @@
+@import "../../../../styles/variables";
+
+.scrollspy-pill{
+    border: 2px solid $dim-gray;
+    width: 10px;
+    height: 30px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.scrollspy-menu{
+    position: fixed;
+    left: 4%;
+    bottom: 200px;
+}
+
+.scrollspy-active{
+    background-color: $green-blue-crayola;
+    border: 2px solid $green-blue-crayola;
+}
+
+.col-right{
+    margin-right:10px;
+}
+
+.row{
+    --bs-gutter-x:0;
+    width:10px;
+}

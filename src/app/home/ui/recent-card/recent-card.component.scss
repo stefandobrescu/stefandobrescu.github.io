@@ -1,0 +1,87 @@
+@import "../../../../styles/variables";
+
+.card{
+    width:28%;
+    margin-right:2%;
+    margin-left: 2%;
+    display:inline-block;
+    border-width: 0px;
+    --bs-card-bg: #474b4fff;
+    transition: 0.3s ease;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.6);
+}
+
+.card-body{
+    background-color: $davys-grey;
+    fill-opacity: 20%;
+    border-radius: 5px;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.card-text{
+    font-size: 30px;
+    margin-top:-10px;
+    margin-bottom: -5px;
+    letter-spacing: 2px;
+}
+
+.card:hover{
+    transform: scale(1.2);
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.4);
+    --bs-card-bg: #3284c2;
+    .card-body{background-color: $green-blue-crayola;}
+    .carousel-img{
+        filter:blur(0px);
+    }
+}
+
+.carousel-img{
+    max-height:300px;
+    height:250px;
+    object-fit:cover;
+    border-radius: 7px 7px 0px 0px;
+    filter: blur(1px);
+}
+
+.carousel-caption{
+    padding-bottom: 0rem;
+}
+
+.card-name{
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 5px;
+    margin: auto;
+    width: max-content;
+    padding: 2px 20px;
+}
+
+@media only screen and (max-width: 850px){
+    .card-text{
+        font-size: 12px;
+    }
+
+    .card{
+        width:250px;
+        margin-bottom:20px;
+        margin-left:15px;
+    }
+
+    .carousel-img{
+        max-height:120px;
+        object-fit:cover;
+        border-radius: 7px 7px 0px 0px;
+        filter: blur(1px);
+    }
+
+    .carousel-caption{
+        padding-bottom:0px;
+    }
+
+    .card-name{
+        width: 180px;
+        white-space: nowrap;
+        overflow: hidden !important;
+        text-overflow: ellipsis;
+    }
+}

@@ -1,0 +1,33 @@
+@import "../../../../styles/variables";
+
+.btn-outline-primary{
+    color:$dim-gray;
+    border-color: $dim-gray;
+}
+
+.btn-group{
+    margin-left:100px;
+    margin-top:50px;
+}
+
+.btn-outline-primary:hover{
+    color:$green-blue-crayola;
+    border-color: $green-blue-crayola;
+}
+
+.btn-check:checked + .btn, :not(.btn-check) + .btn:active, .btn:first-child:active, .btn.active, .btn.show{
+    color:white;
+    border-color: $green-blue-crayola;
+    background-color: $green-blue-crayola;
+}
+
+.main-content-container{
+    min-height:91vh;
+}
+
+@media only screen and (max-width: 850px){
+    .btn-group{
+        margin-left:10%;
+        margin-top:5%;
+    }
+}

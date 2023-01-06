@@ -1,0 +1,19 @@
+<div class="changelog-div">
+    <div class="changelog-container">
+        <div class="sticky-top title-div">
+            <h1 class="title">Changelog</h1>
+        </div>
+            <ul>
+                <li *ngFor="let version of changelogList">
+                    <details open class="devlog-container">
+                    <summary>{{ version.number }}</summary>
+                        <h3>{{ version.date }}</h3>
+                        <p *ngFor="let change of version.changes">{{ change }}</p>
+                    </details>
+                </li>
+            </ul>
+    </div>
+    <div class="footer-container">
+        <footer></footer>
+    </div>
+</div>

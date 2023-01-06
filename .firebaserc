@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "personal-website-e8af2": {
+      "hosting": {
+        "portfolio": [
+          "personal-website-e8af2"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "personal-website-e8af2"
+  }
+}

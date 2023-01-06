@@ -1,0 +1,106 @@
+@import "../../../../styles/variables";
+
+.image{
+    width:400px;
+    border-radius: 10px;
+}
+
+.content-container{
+    margin-left:300px;
+    margin-right:300px;
+    height:91vh;
+}
+
+.text{
+    width:500px;
+}
+
+.image-container{
+    display: inline-block;
+    margin-top:12%;
+}
+
+.text-container{
+    display: inline-block;
+    margin-left:100px;
+}
+
+.title{
+    margin-top:-200px;
+    margin-bottom: 30px;
+}
+
+.quote{
+    margin-top:50px;
+}
+
+.quote-text{
+    font-family: 'MrsSaintDelafield';
+    font-size: 40px;
+    color: $dim-gray;
+    margin-left:200px;
+}
+
+.quote2{
+    margin-left:400px;
+}
+
+.colored{
+    color: $green-blue-crayola;
+}
+
+
+@media only screen and (max-width: 850px){
+    .image{
+        width:200px;
+        border-radius: 10px;
+        margin-left:25%;
+        height:200px;
+        object-fit:cover;
+        margin-top:20px;
+    }
+
+    .content-container{
+        margin-left:0px;
+        margin-right:0px;
+        height:70vh;
+    }
+
+    .text{
+        width:auto;
+        padding:25px;
+    }
+
+    .image-container{
+        display: contents;
+        margin-top:0%;
+    }
+
+    .text-container{
+        display: contents;
+        margin-left:100px;
+        text-align: justify;
+    }
+
+    .title{
+        margin-top:10px;
+        margin-bottom: 0px;
+        font-size: 30px;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+    
+    .quote-text{
+        font-size: 25px;
+        margin-left:150px;
+    }
+
+    .quote2{
+        margin-left:225px;
+        font-size: 25px;
+    }
+
+    .quote{
+        margin-top:-40px;
+    }
+}

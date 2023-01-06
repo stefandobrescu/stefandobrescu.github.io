@@ -1,0 +1,382 @@
+@import "../../../../styles/variables";
+
+.home-page{
+    color:white;
+    margin-left:0px;
+    --bs-gutter-x:0;
+}
+
+.main-content section{
+    scroll-snap-align: start;
+}
+
+.scrollspy-example {
+    position: relative;
+    height:849px;
+    overflow-y: scroll;
+    scroll-snap-points-y: repeat(100vh);
+	scroll-snap-type: y mandatory;
+}
+
+.home-page-section{
+    margin-left: 9%;
+    margin-bottom: -100px;
+    height:945px;
+}
+
+.picture{
+    margin-top:6%;
+    margin-left:10%;
+    display:inline-block;
+    vertical-align:middle;
+}
+
+.about-me{
+    display:inline-block;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    vertical-align:middle;
+    margin-top:15%;
+    margin-left: -3%;
+    width:1000px;
+}
+
+.wrapper{
+    display: inline-flex;
+    margin-left: 14%;
+}
+
+.wrapper .static-text{
+    font-size: 50px;
+}
+
+.wrapper .dynamic-text{
+    height:60px;
+    line-height: 60px;
+    overflow: hidden;
+    margin-top:9px;
+}
+
+.dynamic-text li{
+    list-style: none;
+    font-size: 50px;
+    margin-left: -12px;
+    color: $green-blue-crayola;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide{
+    100%{
+        top:-240px;
+    }
+}
+
+.dynamic-text li span{
+    position: relative;
+}
+
+.dynamic-text li span::after{
+    left:0;
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid white;
+    background-color: $raisin-black;
+    animation: typing 3s steps(9) infinite;
+}
+
+@keyframes typing{
+    50%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+
+.picture{
+    width:600px;
+}
+
+.picture:hover{
+    content: url(../../../../assets/Stefan1.png);
+}
+
+.centered-container{
+    position:static;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.hidden-reference{
+    visibility:hidden;
+    height: 0px;
+    margin: 0px;
+}
+
+.btn-secondary{
+    background-color: $raisin-black;
+    border: 0px;
+    box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.6);
+    width: 200px;
+    transition: 0.3s ease;
+}
+
+.btn-secondary:hover{
+    background-color: $green-blue-crayola;
+    box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.4);
+    transform: scale(1.2);
+}
+
+.service-card{
+    width:500px;
+    box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.6);
+    height:400px;
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 15px;
+    background-color: $raisin-black;
+    transition: 0.3s ease;
+}
+
+.service-card:hover{
+    background-color: $green-blue-crayola;
+    box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.4);
+    .fa-solid{
+        color: white;
+    }
+    .service-card-container{
+        background-color:$raisin-black;
+    }
+    .service-card-text{
+        color:white;
+    }
+    .service-card-hr{
+        color:white !important;
+        border: solid 1px white;
+    }
+}
+
+.service-card-title{
+    font-size: 30px;
+    margin-top:50px;
+}
+
+.service-card-text{
+    font-size: 15px;
+    margin-top:30px;
+    color: $dim-gray;
+}
+
+.service-card-container-top{
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 52px;
+}
+
+.service-card-container{
+    background-color: $green-blue-crayola;
+    line-height: 50px;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.service-card-tags{
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.fa-solid{
+    color:$green-blue-crayola;
+    margin-top:50px;
+}
+
+.service-card-hr{
+    margin-top: 30px;
+    width:20%;
+    margin-left: auto;
+    margin-right: auto;
+    color: $green-blue-crayola;
+    border: solid 1px $green-blue-crayola;
+}
+
+.services-section{
+    height:950px;
+}
+
+::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+	background-color: transparent;
+}
+
+::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: $davys-grey;
+}
+
+@media only screen and (max-width: 850px){
+    .picture{
+        width:250px;
+        margin-left:18%;
+        margin-top:80px;
+        margin-bottom:12px;
+    }
+
+    .medium-text{
+        font-size: 15px;
+        margin-left: 20%;
+    }
+
+    .large-text{
+        font-size: 25px;
+        width:300px;
+        margin-left:20%;
+        text-align: right;
+    }
+
+    .wrapper .static-text{
+        font-size: 15px;
+    }
+
+    .dynamic-text ul{
+        margin-left:0px;
+    }
+
+    .wrapper{
+        display: inline-flex;
+        margin-left: 20%;
+    }
+
+    .about-me{
+        margin-left:0px;
+    }
+
+    .home-page-section{
+        margin-left:0px;
+    }
+
+    .dynamic-text li{
+        list-style: none;
+        font-size: 15px;
+        margin-left: -25px;
+        color: $green-blue-crayola;
+        position: relative;
+        top: 0;
+        animation: slide 12s steps(4) infinite;
+    }
+    
+    @keyframes slide{
+        100%{
+            top:-240px;
+        }
+    }
+    
+    .dynamic-text li span{
+        position: relative;
+        font-size: 16px;
+    }
+    
+    .dynamic-text li span::after{
+        left:0;
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border-left: 2px solid white;
+        background-color: $raisin-black;
+        animation: typing 3s steps(9) infinite;
+        top:0px;
+    }
+    
+    @keyframes typing{
+        50%{
+            left: 100%;
+            margin: 0px -35px 0 35px;
+        }
+    }
+
+    .wrapper .dynamic-text{
+        margin-top:-19px;
+    }
+
+    .re{
+        margin:auto;
+    }
+
+    .se{
+        margin:auto;
+        text-align: center;
+        margin-left:15%;
+    }
+
+    .service-card{
+        width:250px;
+        height:200px;
+        margin-bottom: 25px;
+        margin-top:25px;
+        margin-left: 15%;
+    }
+
+    .service-card-container-top{
+        height:200px;
+        padding:5px;
+        margin-bottom: -50px;
+    }
+
+    .service-card-title{
+        font-size: 20px;
+        margin-top:20px;
+    }
+
+    .service-card-text{
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .fa-solid{
+        margin-top: 30px;
+    }
+
+    .service-card-hr{
+        margin-top:10px;
+        margin-bottom:0px;
+    }
+
+    .about-me{
+        width:auto;
+    }
+
+    .contact-button{
+        margin-left:5%;
+    }
+
+    .service-card-tags{
+        letter-spacing: 1px;
+        font-size:12px;
+        font-weight: normal;
+    }
+
+    .service-card-container{
+        line-height: 30px;
+        margin-top:20px;
+    }
+
+    .scrollspy-example {
+        height:756px;
+    }
+}
+
+@media only screen and (min-width: 500px){
+    .mobile-only-br{
+        display: none;
+    }
+}

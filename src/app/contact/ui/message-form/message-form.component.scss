@@ -1,0 +1,89 @@
+@import "../../../../styles/variables";
+
+.form{
+    width:98%;
+    padding:80px;
+    margin-top:2%;
+}
+
+textarea{
+    overflow: hidden;
+    max-height: 190px;
+}
+
+.btn{
+    background-color: $green-blue-crayola;
+    border: none;
+    width:25%;
+    height:50px;
+    margin-top:10px;
+    transition: 0.2s ease;
+}
+
+.btn:hover{
+    transform: scale(1.2);
+    box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.4);
+}
+
+.btn:active{
+    background-color:$y-in-mn-blue;
+}
+
+.form-control{
+    background-color: #191A1E;
+    color: $dim-gray;
+    border: 0px;
+}
+
+textarea{
+    margin-top:15px;
+}
+
+.alert{
+    height:25px;
+    padding-top:0px;
+}
+
+/* Change the white to any color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #191A1E inset !important;
+    box-shadow: 0 0 0 30px #191A1E inset !important;
+    -webkit-text-fill-color: $dim-gray;
+}
+
+@media only screen and (max-width: 850px){
+    .form{
+        margin-left:5px;
+        padding-top:0px;
+        padding-bottom:30px;
+        padding-left:25px;
+        padding-right:25px;
+    }
+
+    div{
+        margin-top:10px;
+    }
+
+    textarea{
+        margin-top:0px;
+        font-size:12px;
+        max-height: 65px;
+    }
+
+    input{
+        font-size:12px;
+    }
+
+    button{
+        font-size:15px;
+    }
+
+    .btn{
+        width:auto;
+        height:35px;
+        margin-top:0px;
+    }
+}

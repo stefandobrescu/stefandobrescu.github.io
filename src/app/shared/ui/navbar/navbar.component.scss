@@ -1,0 +1,73 @@
+@import "../../../../styles/variables";
+
+.logo{
+    height: 40px;
+    margin-right: 0px;
+    margin-left:30px;
+}
+
+.navbar-nav .nav-link{
+    color: $dim-gray;
+    letter-spacing: 1px;;
+}
+
+.name{
+    color:white;
+    font-weight: 500;
+    margin-left:10px;
+    letter-spacing: 1px;
+    margin-top: -10px;
+    text-decoration: none;
+}
+
+.bg-dark{
+    background-image: url("/assets/Background.png");
+    background-repeat:no-repeat;
+    background-size: 100%;
+    background-color: $raisin-black;
+}
+
+.logo-link:hover{
+    transition: all 0.1s ease-in-out;
+    filter:brightness(75%) sepia(100) saturate(130) hue-rotate(200deg);
+    transform: scale(1.2) translateX(-3px) translateY(1px);
+}
+
+.container-fluid{
+    margin-top: 15px;
+}
+
+.navbar-link{
+    position: relative;
+}
+
+.navbar-link:after{
+    content: "";
+    position: absolute;
+    background-color: $green-blue-crayola;
+    height: 3px;
+    width: 0%;
+    left: 0px;
+    bottom: 0px;
+    transition: 0.3s;
+}
+
+.navbar-link:hover{
+    color:white !important;
+}
+
+.navbar-link:hover:after{
+    width: 100%;
+}
+
+.active-route{
+    color: white !important;
+}
+
+@media only screen and (max-width: 850px){
+    .name{
+        margin-top:-10px;
+        padding-right:20px;
+        text-decoration: none;
+    }
+}

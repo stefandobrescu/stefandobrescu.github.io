@@ -1,0 +1,106 @@
+@import "../../../../styles/variables";
+
+.content-container{
+    min-height:91vh;
+}
+
+.card-img-top{
+    max-height:400px;
+    max-width:700px;
+    object-fit:cover;
+    margin-top:5px;
+}
+
+.title{
+    color:white;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size:75px;
+    letter-spacing: 10px;
+    font-weight:bold;
+    padding-top:50px;
+    padding-bottom: 20px;
+}
+
+.carousel{
+    margin:auto;
+    max-width:700px;
+}
+
+.image-container{
+    background-color:rgba(0, 0, 0, 0.356);
+
+}
+
+.picture-text{
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 5px;
+    margin: auto;
+    width: max-content;
+    padding: 2px 20px;
+}
+
+.heading{
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color:$green-blue-crayola;
+    text-align: center;
+    margin-top: 40px;
+    max-width: 700px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.paragraph{
+    color:white;
+    text-align:center;
+    max-width: 700px;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 10px;
+}
+
+.content-container{
+    margin-bottom:-16px;
+    padding: 10px 0px;
+}
+
+.meta-container{
+    background-color: #191a1eb9;
+    padding:25px 50px;
+    margin-top:50px;
+}
+
+.meta-name{
+    display:inline-block;
+    color:$green-blue-crayola;
+}
+
+.meta-value{
+    float: right;
+    color:white;
+}
+
+@media only screen and (max-width: 850px){
+    .title{
+        font-size: 30px;
+        padding: 0px 20px;
+    }
+
+    .meta-value{
+        display: inline-block;
+        width: 150px;
+        white-space: nowrap;
+        overflow: hidden !important;
+        text-overflow: ellipsis;
+        text-align: right;
+    }
+
+    .picture-text{
+        width: 280px;
+        white-space: nowrap;
+        overflow: hidden !important;
+        text-overflow: ellipsis;
+    }
+}

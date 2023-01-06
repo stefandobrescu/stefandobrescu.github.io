@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-lg sticky-top bg-dark shadow-5-strong">
+    <div class="container-fluid">
+        <a routerLink="/" class="navbar-brand logo-link hover-effect">
+            <img src="../../../../assets/Logo_White.png" class="navbar-brand logo">
+        </a>
+        <a routerLink="/about" class="name mb-lg-0">STEFAN DOBRESCU</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto mb-lg-0">
+                <li class="nav-item px-5">
+                    <a routerLink="/about" class="nav-link active navbar-link" [ngClass]="{'active-route': getActiveTab() == '/about'}" aria-current="page">ABOUT</a>
+                </li>
+                <li class="nav-item px-5">
+                    <a routerLink="/portfolio" class="nav-link active navbar-link" [ngClass]="{'active-route': getActiveTab() == '/portfolio'}" aria-current="page">PORTFOLIO</a>
+                </li>
+                <li class="nav-item px-4">
+                    <a routerLink="/contact" class="nav-link active navbar-link" [ngClass]="{'active-route': getActiveTab() == '/contact'}" aria-current="page">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

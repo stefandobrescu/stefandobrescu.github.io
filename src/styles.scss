@@ -1,0 +1,70 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "styles/_variables.scss";
+
+
+body{
+    background-image: url("/assets/Background.png");
+    background-repeat:no-repeat;
+    background-size: 100%;
+    background-color: $raisin-black;
+    background-attachment: fixed;
+}
+
+::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+	background-color: transparent;
+}
+
+::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: $davys-grey;
+}
+
+img, svg {
+    vertical-align: baseline;
+}
+
+.medium-text{
+    position: inherit;
+    font-size: 50px;
+    letter-spacing: 6px;
+    margin-left:14%;
+}
+
+.large-text{
+    position: inherit;
+    font-size:75px;
+    letter-spacing: 10px;
+    font-weight:bold;
+}
+
+.cw{
+	color:white;
+}
+
+.pm{
+	text-align: center;
+}
+
+.m-30{
+    margin-top:30px;
+}
+
+@font-face {
+    font-family: Niconne;
+    src: url("assets/Fonts/Niconne-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: MrsSaintDelafield;
+    src: url("assets/Fonts/MrsSaintDelafield-Regular.ttf") format("truetype");
+}

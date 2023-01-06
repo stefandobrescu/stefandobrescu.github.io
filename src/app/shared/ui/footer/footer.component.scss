@@ -1,0 +1,108 @@
+@import "../../../../styles/variables";
+
+.footer-wrapper{
+    background-color: #191A1E;
+    height: 190px;
+}
+
+hr{
+    position: relative;
+    border: solid 1px $davys-grey;
+    margin-right:5%;
+    margin-left:5%;
+}
+
+.version-control{
+    float: left;
+    font-size: 11px;
+    color: $davys-grey;
+    margin-left: 5%;
+}
+
+.copyright{
+    float: right;
+    font-size: 11px;
+    color: $davys-grey;
+    margin-right:5%;
+}
+
+.logo{
+    width:35px;
+    margin-top: 30px;
+    display:inline-block;
+    filter:brightness(45%);
+}
+
+.name{
+    display:inline-block;
+    margin-top:-30px;
+    vertical-align: middle;
+    margin-left:50px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.branding{
+    text-align: center;
+    color: $dim-gray;
+}
+
+.url{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.url-container{
+    margin-right: 50%;
+    margin-left: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.instagram-image:hover{
+    content: url("../../../../assets/ExternalIcons/Instagram.png");
+}
+
+.linkedin-image:hover{
+    content: url('../../../../assets/ExternalIcons/Linkedin.png');
+}
+
+.youtube-image:hover{
+    content: url('../../../../assets/ExternalIcons/Youtube.png');
+}
+
+.instagram-image{
+    content: url("../../../../assets/ExternalIcons/Instagram_Unclicked.png");
+    display: inline-block;
+    width: 40px;
+}
+
+.linkedin-image{
+    content: url('../../../../assets/ExternalIcons/Linkedin_Unclicked.png');
+    display: inline-block;
+    width: 40px;
+}
+
+.youtube-image{
+    content: url('../../../../assets/ExternalIcons/Youtube_Unclicked.png');
+    display: inline-block;
+    width: 40px;
+}
+
+.router-control{
+    font-size: 11px;
+    color: $davys-grey;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 850px){
+    .arr{
+        display:none;
+    }
+
+    .name{
+        margin-top:-10px;
+    }
+}

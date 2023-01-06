@@ -1,0 +1,64 @@
+v.0.0.1 - 23.10.2022
++ First (Alpha) Version of the Website Released
++ Basic HomePage Created (Needs Work)
++ Header and Footer finished (No Functionality/Routing yet)
+
+v.0.0.2 - 26.10.2022
++ Homepage Finished
+-> Picture of me that changes colors when hovered over added
+-> Introductory text with typing effect added
+-> Recent work section finished (Still need to add clickable recent work)
+-> Services section finished
++ Development version of Changelog page (Text only) added
++ Base Routing implemented
+- Minor Improvement to the Scrollspy (Active tab is now blue)
+/ Still not mobile friendly
+
+v.0.0.3 - 29.10.2022
++ Contact Page Implemented
+- Major Module Restructuring/Cleaning
++ Footer Version now automatic
++ Created Firebase App
++ FormSubmit Implemented
+- Changelog Page Finished
+
+v.0.0.4 - 30.10.2022
+- Scrollbar Fixed
+- Firebase Rules Modified. Write permanently disabled.
++ About Page Introduced
+/Portfolio Page remains the last unfinished page
++ Custom Fonts implemented
+- Executed Order 66
+/ Still not mobile friendly. Will do that after v.0.1.0 Release
+
+v.0.1.0 - 16.11.2022
++ Active Header Route now Highlighted in Navbar
+- Fixed the Recents Cards on the HomePage
+-> Their routing also works
++ Built the Portfolio Page
+-> Includes a filter for category and Cards
+-> Card Routing works
++ Implemented the Project view Page
+/ Still not mobile friendly. Will tackle that in the next Version
+/ v.0.2.0 will make the website adaptive. 
+/ v.1.0.0 will add all the initial data to the database (Release)
+/ Need to replace the pictures of Bill Gates.
+/ Content wise (Not Database Content) the Site is done.
+
+v.0.1.1 - 17.11.2022
+- Changelog Page is now mobile friendly
+- Fixed bug where changelog changes would be visible between header and page title
+
+v.0.2.0 - 17.11.2022
+- All Pages are now mobile friendly
++ Name in Navbar is now a link to the About Page
+/ The App is ready for release. All it needs now is data. Planned Release this weekend.
+/ Not landscape mode friendly
+/ big oof
+
+v.1.0.0 - 19.11.2022
+- Fixed the name in the Navbar
+- Fixed the contact page on mobile
+- Fixed the changelog title bug
+- Fixed project names not appearing on mobile bug (Home Screen)
+- Fixed project names not appearing on mobile bug (Project View Screen)

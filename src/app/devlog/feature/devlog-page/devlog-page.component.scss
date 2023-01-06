@@ -1,0 +1,73 @@
+@import "../../../../styles/variables";
+
+.devlog-container{
+    color:white;
+    margin-left:9%;
+    margin-top:20px;
+}
+
+.title{
+    color:white;
+    margin-left:9%;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size:75px;
+    letter-spacing: 10px;
+    font-weight:bold;
+    padding-top:50px;
+    padding-bottom: 20px;
+}
+
+.devlog-container summary{
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color:$y-in-mn-blue;
+}
+
+.devlog-container h3{
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: $green-blue-crayola;
+}
+
+.title-div{
+    top:85px;
+    background-image: url("/assets/Background.png");
+    background-repeat:no-repeat;
+    background-size: 100%;
+    background-position-y: -90px;
+}
+
+.changelog-container{
+    min-height: 71vh;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media only screen and (max-width: 850px){
+    .title{
+        font-size: 30px;
+        margin-left:0px;
+    }
+
+    ul{
+        padding-left:10px;
+        padding-right:10px;
+        display:contents;
+    }
+
+    .devlog-container{
+        margin-left:0px;
+        padding: 0px 30px;
+        margin-top:5px;
+    }
+    
+    .title{
+        margin-bottom:0px;
+        padding-top:20px;
+    }
+}
