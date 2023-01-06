@@ -10,7 +10,7 @@ import { Project } from '../../model/Project';
 export class PortfolioPageComponent implements OnInit {
   allProjects: Project[] = [];
   filteredProjects: Project[] = [];
-  activeCode : number[] = [1,1,1];
+  activeCode : number[] = [1,0,1,1];
 
   constructor(private projectsService : ProjectsService) {
     this.allProjects = projectsService.getAllProjects();
@@ -29,14 +29,13 @@ export class PortfolioPageComponent implements OnInit {
         filteredProjects.push(p);
       }
     })
-
     return filteredProjects;
   }
 
   filterProjects(code: number[]){
     this.filteredProjects = [];
 
-    for(var i = 0; i < 3; i++){
+    for(var i = 0; i < 4; i++){
       this.activeCode[i] = Math.abs(this.activeCode[i] - code[i]);
       if(this.activeCode[i] == 1){
         if(this.filteredProjects.length == 0){

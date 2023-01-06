@@ -31,7 +31,9 @@ export class ProjectsService {
           metadata: this.getMetadata(data.metadata)
         };
         
-        projectList.push(newProject);
+        if(newProject.category != 2){
+          projectList.push(newProject);
+        }
         
       })
 

@@ -56,7 +56,7 @@ export class RecentCardComponent implements OnInit {
     this.allProjects.forEach(p => {
       if(this.cardText == 'DEVELOPMENT' && p.category == 1){
         filteredProjects.push(p);
-      }else if(this.cardText == '3D MODELING' && p.category == 2){
+      }else if(this.cardText == 'TEACHING' && p.category == 4){
         filteredProjects.push(p);
       }else if(this.cardText == 'WRITING' && p.category == 3){
         filteredProjects.push(p);    

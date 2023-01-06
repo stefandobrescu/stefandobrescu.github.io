@@ -17,7 +17,7 @@ export class ProjectListViewComponent implements OnInit {
   }
 
   getCategory(category: number){
-    return category == 1 ? 'Programming' : category == 2 ? '3D Modeling' : 'Writing';
+    return category == 1 ? 'Programming' : category == 4 ? 'Teaching' : 'Writing';
   }
 
   viewProject(projectId : string){
